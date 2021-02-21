@@ -1,0 +1,94 @@
+body {
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+   margin-top: 80px;
+   background-color: #48dbfb;
+   color: white;
+}
+
+.quote-box {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 5px solid white;
+   width: 1350px;
+   height: 180px;
+}
+
+.centerContent {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+h1 {
+   font-size: 50px;
+   color: white;
+}
+
+.color {
+   color: white;
+}
+
+.form,
+.greetings {
+   margin-top: 0px;
+   display: none;
+}
+.showing {
+   display: block;
+}
+
+button {
+   width: 30px;
+   height: 20px;
+}
+
+form {
+   padding: 20px;
+}
+input[type="text"] {
+   background: transparent;
+   border: none;
+   width: 250px;
+}
+input:focus {
+   outline: none;
+}
+input,
+select,
+textarea {
+   color: white;
+   font-size: 25px;
+}
+input::placeholder {
+   color: white;
+   font-size: 25px;
+}
+
+.bgImage {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   animation: fadeIn 0.5s linear;
+}
+
+/* Center the Clock and the weather*/
+
+.js-weather {
+   margin-left: -40px;
+}
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
